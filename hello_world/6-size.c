@@ -7,6 +7,8 @@
 #include<stdio.h>
 int main(void)
 {
+	int long_int;
+    int long_long_int;
     printf("Size of char: %zu bytes\n", sizeof(char));
     printf("Size of int: %zu bytes\n", sizeof(int));
     printf("Size of long int: %zu bytes\n", sizeof(long_int));
