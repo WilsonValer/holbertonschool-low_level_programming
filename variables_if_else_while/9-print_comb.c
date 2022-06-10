@@ -15,6 +15,7 @@ int main(void)
 		if (ch != 57)
 		{
 			putchar(44);
+			putchar(32);
 		}
 		else if (ch == 57)
 		{
