@@ -1,13 +1,10 @@
 #include "main.h"
 #include <ctype.h>
 /**
- * _islower - Checks if the param is lowercase
+ * _islower(int c) - function that checks for lowercase character
  *
- * work fucntion
- *
- * Description: Checks if the param is lowercase.
- *
- * Return: 1 if is lowercase or 0 is not
+ *Returns 1 if c is lowercase
+ *Returns 0 otherwise
  */
 
 int _islower(int c)
