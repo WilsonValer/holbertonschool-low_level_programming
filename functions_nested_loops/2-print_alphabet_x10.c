@@ -2,7 +2,7 @@
 /**
  * 2-print_alphabet_x10 - Entry point
  *
- * Return: Always 0 (Success)
+ * Return: no tiene retorno
  */
 void print_alphabet_x10(void)
 {
