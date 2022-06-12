@@ -3,9 +3,7 @@
 /**
  *print_sign  -  a function that prints the sign of a number
  *@n: the character to print
- *return: 1 and prints + if n is greater than zero
- 0 and prints 0 if n is zero
- -1 and prints - if n is less than zero
+ *return: return the sign of a number
  */
 
 int print_sign(int n)
