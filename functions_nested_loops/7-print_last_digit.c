@@ -26,23 +26,8 @@ int print_last_digit(int n)
 	}
 	else
 	{
-		if (n == -2147483648)
-		{	m = 8;
-			result = m;
-			_putchar('0' + m);
-		}
-		else if (n == 1)
-		{
-			m = 1;
-			result = 1;
-			_putchar('0' + m);
-
-		}
-		else
-		{
-			result = b;
-			_putchar('0' + b);
-		}
+		result = b;
+		_putchar('0' + b);
 	}
 	return (result);
 }
