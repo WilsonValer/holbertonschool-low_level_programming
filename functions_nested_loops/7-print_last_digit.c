@@ -24,7 +24,15 @@ int print_last_digit(int n)
 	}
 	else
 	{
-		_putchar('0' + m);
-		return (b);
+		if (n == -2147483648)
+		{	m = 8;
+			_putchar('0' + m);
+			return (m);
+		}
+		else
+		{
+			_putchar('0' + m);
+			return (b);
+		}
 	}
 }
