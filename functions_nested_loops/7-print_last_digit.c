@@ -1,12 +1,13 @@
 #include "main.h"
 #include <ctype.h>
 #include <stdlib.h>
+#include <limits.h>
 /**
- *int print_last_digit  - return the last digit of a number
+ *print_last_digit  - prints the last digit of a number
  *
- * @n: Number recevied
+ * @n: Number received
  *
- * Return: return the value of the last digit
+ * Return: return the last digit of a number
  */
 int print_last_digit(int n)
 {
