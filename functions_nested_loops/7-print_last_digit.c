@@ -10,7 +10,7 @@
  */
 int print_last_digit(int n)
 {
-	int m;
+	int m = 0;
 	int b;
 
 	b = abs(n);
@@ -18,10 +18,13 @@ int print_last_digit(int n)
 	{
 		m = (b % 10);
 
+		_putchar('0' + m);
+
 		return (m);
 	}
 	else
 	{
+		_putchar('0' + m);
 		return (b);
 	}
 }
