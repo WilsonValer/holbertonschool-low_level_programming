@@ -1,7 +1,7 @@
 #include "main.h"
 #include <ctype.h>
 /**
- *print_sign  -  a function that prints the sign of a number
+ *print_sign - return  that  the sign of a number
  *@n: the character to print
  *return: return the sign of a number
  */
