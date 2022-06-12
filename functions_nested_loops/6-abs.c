@@ -6,7 +6,7 @@
  *
  * @n: Number recevied
  *
- * Return: return the absolute value of n
+ * Return: return the absolute value of number
  */
 int _abs(int n)
 {
