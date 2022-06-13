@@ -1,11 +1,17 @@
 #include "main.h"
 #include <ctype.h>
 /**
- *print_sign - return  that  the sign of a number
- *@n: the character to print
- *return: return the sign of a number
+ * print_sign - Print +, - or 0 if the number is positive negative or 0.
+ * respectively.
+ *
+ * @n: Number recivied
+ *
+ * Description: Print +, - or 0 if the number is positive negative or 0.
+ * respectively.
+ *
+ * Return:  1, -1 or 0 if the number is positive negative or 0.
+ * respectively.
  */
-
 int print_sign(int n)
 {
 
