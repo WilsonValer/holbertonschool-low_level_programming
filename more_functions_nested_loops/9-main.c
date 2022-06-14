@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-	fizz_buzz(100);
+	fizz_buzz();
     return (0);
 }
