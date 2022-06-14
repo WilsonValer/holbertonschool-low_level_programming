@@ -18,4 +18,5 @@ void print_most_numbers(void)
 		}
 		printf("%d", n);
 	}
+	printf("\n");
 }
