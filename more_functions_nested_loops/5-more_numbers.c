@@ -1,10 +1,9 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
- * main - check the code
+ * more_numbers - prints 10 times the numbers, from 0 to 14
  *
- * Return: Always 0.
+ * Return: return void
  */
 void more_numbers(void)
 {
