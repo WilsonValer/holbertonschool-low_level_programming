@@ -1,9 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - check the code
+ * print_square - Prints a square.
  *
- * Return: Always 0.
+ * @size: variable received
+ *
+ * Return: return value Void
  */
 void print_square(int size)
 {
