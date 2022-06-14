@@ -1,9 +1,8 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
- * main - check the code
- *
+ *print_diagonal - Draws a diagonal line on the terminal
+ *@n: number of timies character
  * Return: Always 0.
  */
 void print_diagonal(int n)
