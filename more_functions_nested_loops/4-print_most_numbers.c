@@ -1,10 +1,9 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
- * main - check the code
+ *print_most_numbers  - prints the numbers, from 0 to 9, followed by a new line
  *
- * Return: Always 0.
+ * Return: return void
  */
 void print_most_numbers(void)
 {
@@ -13,7 +12,7 @@ void print_most_numbers(void)
 	while (n < 9)
 	{
 		n++;
-		if (n == 4)
+		if (n == 2 || n == 4)
 		{
 			continue;
 		}
