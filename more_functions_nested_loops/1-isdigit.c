@@ -1,10 +1,9 @@
 #include "main.h"
 #include <ctype.h>
-
 /**
- * main - check the code.
- *
- * Return: Always 0.
+ * _isdigit - checks for a digit (0 through 9)
+ *@c: character received ACII
+ * Return: Returns 1 if c is a digit or 0 otherwise
  */
 int _isdigit(int c)
 {
