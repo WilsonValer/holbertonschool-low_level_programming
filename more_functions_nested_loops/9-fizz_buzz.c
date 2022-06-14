@@ -1,16 +1,16 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * fizz_buzz - prints the numbers from 1 to 100
+ *@n: variable received
+ * Return: return value void
  */
-void fizz_buzz(void)
+void fizz_buzz(int n)
 {
 	int i;
 
 	i = 1;
-	while (i <= 100)
+	while (i <= n)
 	{
 		if (i % 15 == 0)
 		{
@@ -22,11 +22,11 @@ void fizz_buzz(void)
 		}
 		else if (i % 3 == 0)
 		{
-			printf("Fizz Buzz")
+			printf("Fizz Buzz");
 		}
 		else
 		{
-			printf("&d", i);
+			printf("%d", i);
 		}
 		printf("\n");
 		 i++;
