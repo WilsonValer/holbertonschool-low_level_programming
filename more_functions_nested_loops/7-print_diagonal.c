@@ -15,20 +15,20 @@ void print_diagonal(int n)
 		i = 1;
 		while (i <=  n)
 		{
-			_putchar(92);
-			printf("\n");
 			r = 0;
 			while (r <= i)
 			{
 				_putchar(32);
 				r++;
 			}
+			_putchar(92);
+			_putchar('\n');
 			i++;
 		}
 	}
 	else if (n == 0 || n < 0)
 	{
-		printf("\n");
+		_putchar('\n');
 
 	}
 }
