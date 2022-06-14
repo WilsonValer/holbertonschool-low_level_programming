@@ -1,11 +1,10 @@
 #include "main.h"
 #include <ctype.h>
 #include <stdio.h>
-
 /**
- * main - check the code.
- *
- * Return: Always 0.
+ * print_numbers - prints an integers
+ *@n: number to print
+ * Return: Always return 0
  */
 void print_numbers(void)
 {
