@@ -21,12 +21,12 @@ void print_square(int size)
 				_putchar(35);
 				i++;
 			}
-			printf("\n");
+			_putchar('\n');
 			r++;
 		}
 	}
 	else if (size <=  0)
 	{
-		printf("\n");
+		_putchar('\n');
 	}
 }
