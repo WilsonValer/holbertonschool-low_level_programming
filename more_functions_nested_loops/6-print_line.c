@@ -1,10 +1,9 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * print_line - check that draws a diagonal line on the terminal
+ *@n: number of times character
+ * Return: return void
  */
 void print_line(int n)
 {
