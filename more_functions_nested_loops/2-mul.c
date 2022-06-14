@@ -1,10 +1,10 @@
 #include "main.h"
 #include <ctype.h>
-
 /**
- * main - check the code.
- *
- * Return: Always 0.
+ *mul - check that multiplies two integers
+ *@a: number received
+ *@b: second number received
+ * Return: return the product about two numbers
  */
 int mul(int a, int b)
 {
