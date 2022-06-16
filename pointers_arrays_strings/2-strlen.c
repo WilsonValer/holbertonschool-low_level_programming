@@ -2,10 +2,9 @@
 #include <stdio.h>
 #include <string.h>
 /**
- *swap_int - print that swaps the values of two integers
- *@a: variable received how pointer
- *@b: variable received how pointer
- * Return: return void
+ *_strlen - function that returns the length of a string
+ *@s: variable received how pointer
+ * Return: return the lenght r
  */
 int _strlen(char *s)
 {
