@@ -4,9 +4,8 @@
  * reset_to_98 - updates the value it points to to 98
  * Return: return void
  */
-void reset_to_98(int *m)
+void reset_to_98(int *n)
 {
-	printf("value of 'n': %p\n",(void *)m);
-	printf("address of 'n': %p\n", (void *)&m);
-	*m = 98;
+
+ 	*n = 98;
 }
