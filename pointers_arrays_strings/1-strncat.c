@@ -2,8 +2,8 @@
 
 /**
  * *_strcat -  function that concatenates two strings
+ * @n: is a max variable received to print
  * @dest: variable received
- * @n: variable received
  *@src: variable received
  * Return: return dest;
  */
