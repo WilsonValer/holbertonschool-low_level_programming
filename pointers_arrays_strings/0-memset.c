@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strcmp - function that fills memory with a constant byte
+ *_memset - function that fills memory with a constant byte
  *@n: variable received number of character
  *@b: variable received type char
  *@s: variable received type pointer
