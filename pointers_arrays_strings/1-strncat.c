@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_strcat -  function that concatenates two strings
+ * *_strncat -  function that concatenates two strings
  * @n: is a max variable received to print
  * @dest: variable received
  *@src: variable received
