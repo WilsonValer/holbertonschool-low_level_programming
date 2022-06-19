@@ -3,6 +3,7 @@
 /**
  * *_strcat -  function that concatenates two strings
  * @dest: variable received
+ * @n: variable received
  *@src: variable received
  * Return: return dest;
  */
