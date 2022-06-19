@@ -2,6 +2,7 @@
 #include <stdio.h>
 /**
  * *_strncpy - function that copies a string
+ * @n: n is the max character to print
  *@dest: variable received
  *@src: variable received
  * Return: return dest;
