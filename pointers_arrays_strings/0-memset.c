@@ -4,8 +4,8 @@
  * _strcmp - function that fills memory with a constant byte
  *@n: variable received number of character
  *@b: variable received type char
- @s: variable received type pointer
- * Return: return s
+ *@s: variable received type pointer
+ *Return: return s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
