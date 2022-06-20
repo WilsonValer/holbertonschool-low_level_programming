@@ -20,13 +20,16 @@ char *_strchr(char *s, char c)
 	}
 	i++;
 	r = 0;
+
 	while (r <= i)
 	{
 		if (s[r] == c)
 		{
 			zap = &s[r];
+			return (zap);
 
 		}
+		r++;
 
 	}
 	return (zap);
