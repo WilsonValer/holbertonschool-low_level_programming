@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  *string_toupper - lowercase letters of a string to uppercase
- @s: variable received
+ *@s: variable received
  * Return: return dest;
  * parameters:
  */
