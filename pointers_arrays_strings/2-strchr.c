@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- *_memcpy - function that locates a character in a string
+ *_strchr - function that locates a character in a string
  *@s: variable received number of character
  *@c: variable received type char
  *Return: return s
