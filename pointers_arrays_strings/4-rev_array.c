@@ -1,11 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * *_strncpy - function that copies a string
- *@dest: variable received
- *@src: variable received
- @n: variable received
- * Return: return dest;
+ *reverse_array - reverses the content of an array of integers
+ *@a: variable received
+ *@n: variable received
+ * Return: return void
  */
 void reverse_array(int *a, int n)
 {
