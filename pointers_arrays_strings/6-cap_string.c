@@ -7,34 +7,30 @@
  @n: variable received
  * Return: return dest;
  */
-char *cap_string(char *s)
-	
+char *cap_string(char *n)
 {
-    int i;
-        
-for(i=0; s[i]!='\0'; i++)
-	{
-		if(i==0)
-		{
-			if((s[i]>='a' && s[i]<='z'))
-				s[i]=s[i]-32; 
-			continue; 
-		}
-			if(s[i]==' ')
-		{
-			++i;
+	int i, j;
+	int cap = 32;
+	int sepa[12] = {',', ';', '.', '?', '"',
+				'(', ')', '{', '}', ' ', '\n', '\t'};
 
-			if(s[i]>='a' && s[i]<='z')
+	for (i = 0; n[i] != '\0'; i++)
+	{
+		if (n[i] >= 'a' && n[i] <= 'z')
+		{
+			n[i] = n[i] - cap;
+		}
+
+		cap = 0;
+
+		for (j = 0; j <= 12; j++)
+		{
+			if (n[i] == sepa[j])
 			{
-				s[i]=s[i]-32; 
-				continue; 
+				cap = 32;
+				break;
 			}
 		}
-		else
-		{
-			if(s[i]>='A' && s[i]<='Z')
-			s[i]=s[i]+32; 
-		}
 	}
-	return s;
+	return (n);
 }
