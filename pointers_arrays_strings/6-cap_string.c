@@ -1,11 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * *_strncpy - function that copies a string
- *@dest: variable received
- *@src: variable received
+ *cap_string  - function that capitalizes all words of a string.
  @n: variable received
- * Return: return dest;
+ * Return: return  n
  */
 char *cap_string(char *n)
 {
