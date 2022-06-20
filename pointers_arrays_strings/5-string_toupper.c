@@ -1,13 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * *_strncpy - function that copies a string
- *@dest: variable received
- *@src: variable received
- @n: variable received
+ *string_toupper - lowercase letters of a string to uppercase
+ @s: variable received
  * Return: return dest;
+ * parameters:
  */
-char *string_toupper(char *);
+char *string_toupper(char *s)
 {
 	int i = 0;
 
