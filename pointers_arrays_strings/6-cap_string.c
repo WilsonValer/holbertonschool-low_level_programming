@@ -2,6 +2,7 @@
 #include <stdio.h>
 /**
  *cap_string  - function that capitalizes all words of a string.
+ *@n: variable received 
  * Return: return n
  *parameters: n variable
  */
