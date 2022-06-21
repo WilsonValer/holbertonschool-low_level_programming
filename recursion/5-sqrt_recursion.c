@@ -1,12 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 /**
- *_sqrt_recursion  - check the code
+ *-sqrt_recursion  - check the code
  *@n: variable
  *@k: variable
  * Return: raiz
  */
-int isqrt_rec( long int k, int n)
+int isqrt_rec(long int k, int n)
 
 {
 	int next_k = (k + n / k) / 2;
