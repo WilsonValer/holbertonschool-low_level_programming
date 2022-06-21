@@ -6,10 +6,10 @@
  *@k: variable
  * Return: raiz
  */
-int isqrt_rec(int k, int n)
+int isqrt_rec( long int k, int n)
 
 {
-	float next_k = (k + n / k) / 2;
+	int next_k = (k + n / k) / 2;
 
 	if (n < 0)
 		return (-1);
