@@ -3,6 +3,7 @@
 /**
  *_sqrt_recursion  - check the code
  *@n: variable
+ *@k: variable
  * Return: raiz
  */
 int isqrt_rec(int k, int n)
