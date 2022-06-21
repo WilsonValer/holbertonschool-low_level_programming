@@ -2,6 +2,7 @@
 #include <stdio.h>
 /**
  *-sqrt_recursion  - check the code
+ *isqrt_rec - function raiz
  *@n: variable
  *@k: variable
  * Return: raiz
