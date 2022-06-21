@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- *_print_rev_recursion  - check the code
+ *_strlen_recursion - check the code
  *@s: variable
- * Return: void
+ * Return: lengt
  */
 int _strlen_recursion(char *s)
 {
