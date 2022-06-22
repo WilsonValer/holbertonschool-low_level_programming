@@ -1,14 +1,13 @@
 #include "main.h"
 #include<stdio.h>
-
 /**
- *mul - check that multiplies two integers
- *@a: number received
- *@b: second number received
- * Return: return the product about two numbers
+ *main - funtion main
+ *@argc: number received
+ *@argv: second number received
+ * Return: return 0;
  */
-int main (int argc)
+int main(int argc, char *argv[] __attribute__((unused))) 
 {
-	printf("argc = %d\n", argc);
+	printf("%d\n", argc);
 	return (0);
 }
