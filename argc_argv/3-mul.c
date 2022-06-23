@@ -7,16 +7,20 @@
  *@argv: second number received
  * Return: return 0;
  */
-int main(int argc, char *argv[] __attribute__((unused)))
+int main(int argc, char *argv[])
 {
 	int mul;
-	int i;
+	
 
-		if (argc > 0)
-		for (i = 0; i < argc; i++)
+		if (argc > 1)
 		{
-			mul = atoi(argv[i]) * atoi(argv[i + 1]);
+			mul = atoi(argv[1]) * atoi(argv[2]);
 			printf("%d\n",  mul);
+		}
+		else
+		{
+			printf("error\n");
+			return (-1);
 		}
 	return (0);
 }
