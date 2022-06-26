@@ -2,11 +2,8 @@
 #include <stdio.h>
 /**
  * _strstr - Locates a substring.
- *
  * @haystack: String.
- *
  * @needle: string to match.
- *
  * Return: Pointer to the byte in s of null.
  */
 
