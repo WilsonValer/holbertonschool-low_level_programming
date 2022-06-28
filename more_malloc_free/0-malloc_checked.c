@@ -9,21 +9,16 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	char *ptr = NULL;
+	int *ptr;
 
 	if (b >= UINT_MAX || b == 0)
-	{
 		exit(98);
-	}
-
 	ptr = malloc(b);
-
 	if (!ptr)
 	{
 		free(ptr);
-		exit(98);
+			exit(98);
 	}
+	return (ptr);
 
-
-			return (ptr);
 }
