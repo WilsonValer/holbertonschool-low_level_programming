@@ -13,12 +13,12 @@ void *malloc_checked(unsigned int b)
 
 	if (b >= UINT_MAX || b == 0)
 	{
-		return (0);
+		exit(98);
 	}
 
 	ptr = malloc(b);
 
-	if (!*ptr)
+	if (!ptr)
 	{
 		free(ptr);
 		exit(98);
