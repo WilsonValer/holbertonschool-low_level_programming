@@ -51,6 +51,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	return (ptr);
 }
 
+/**
+*len_string - check the code
+*@string: string
+*Return: always return
+*/
+
 int len_string(char *string)
 {
 	int i = 0;
