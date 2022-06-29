@@ -18,7 +18,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (!ptr)
 	{
-		free(ptr);
 		return (NULL);
 	}
 	else
