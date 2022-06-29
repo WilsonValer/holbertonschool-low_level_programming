@@ -1,7 +1,7 @@
 #include "main.h"
 #include <limits.h>
 /**
- **_calloc( - check the code
+ **_calloc - check the code
  *@nmemb: variable
  *@size: variable
  * Return: Always void
