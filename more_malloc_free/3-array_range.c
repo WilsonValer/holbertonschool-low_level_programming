@@ -4,7 +4,7 @@
  **array_range - check the code
  *@min: variable
  *@max: variable
- * Return: Always void
+ *Return: Always void
  */
 int *array_range(int min, int max)
 {
@@ -14,12 +14,13 @@ int *array_range(int min, int max)
 	if (min > max)
 		return (NULL);
 
-	if (min < max)
-		ptr = malloc(sizeof(int) * (max - min +1));
+		
+	ptr = malloc(sizeof(int) * (max - min +1));
+	
 	if (!ptr)
 		return (NULL);
 
-	for (i = 0; i <= max; i++)
+	for (i = min; i <= max; i++)
 		ptr[i] = min;
 	return (ptr);
 
