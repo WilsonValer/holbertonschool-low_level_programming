@@ -6,7 +6,7 @@
  *@s1: string
  *@s2: string
  *@n: bytes
- * Return: Always 0.
+ *Return: always return
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -17,12 +17,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		if (s1)
 		{
 			while (s1[len_s1])
-				len_s1++;
+			len_s1++;
 		}
 		if (s2)
 		{
 			while (s2[len_s2])
-				len_s2++;
+			len_s2++;
 		}
 	if (n > len_s2)
 		n = len_s2;
@@ -31,11 +31,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		lenTotal = len_s1 + n;
 	else
 		lenTotal = len_s1 + 1;
+	if (s1 || s2)
 	ptr = malloc(sizeof(char) * lenTotal);
-	if (!ptr)
-	{	free(ptr);
-		return (NULL);
-	}
+	else if (!s1 && !s2)
+		ptr = malloc(1);
 	for (i = 0; i < len_s1; i++)
 	{
 		ptr[i] = *s1;
@@ -46,8 +45,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		ptr[i] = *s2;
 		s2++;
 	}
-
 	ptr[i] = '\0';
-
 	return (ptr);
 }
