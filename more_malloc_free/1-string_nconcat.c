@@ -2,12 +2,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- **string_nconcat - check the code
- *@s1: string
- *@s2: string
- *@n: bytes
+ *len_string - funtion lenght
+ *@string: pointer string
  *Return: always return
  */
+int len_string(char *string)
+{
+	int i = 0;
+
+	while (string[i])
+		i++;
+	return (i);
+}
+/**
+**string_nconcat - check the code
+*@s1: string
+*@s2: string
+*@n: bytes
+*Return: always return
+*/
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	 unsigned int i, lenTotal;
@@ -33,7 +47,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		free(ptr);
 		return (NULL);
 	}
-	for (i = 0; i < lenTotal -1; i++)
+	for (i = 0; i < lenTotal - 1; i++)
 	{
 		if (i < len_s1)
 		{
@@ -48,26 +62,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 
 	ptr[i] = '\0';
+
 	return (ptr);
 }
-
-/**
-*len_string - check the code
-*@string: string
-*Return: always return
-*/
-
-int len_string(char *string)
-{
-	int i = 0;
-
-	while (string[i])
-		i++;
-return (i);
-}
-
-
-
-
-
-
