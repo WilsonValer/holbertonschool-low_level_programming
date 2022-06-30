@@ -1,5 +1,4 @@
 #include "main.h"
-#include <limits.h>
 /**
  **_calloc - check the code
  *@nmemb: variable
@@ -8,23 +7,22 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int i;
-	char *ptr;
+	unsigned int i, final_size = nmemb * size;
+	char *str = NULL;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	ptr = malloc(nmemb * size);
+	str = malloc(final_size);
 
-	if (!ptr)
-		return (NULL);
-
-	else
+	if (!str)
 	{
-		for (i = 0; i < nmemb; i++)
-			ptr[i] = 0;
+		free(str);
+		return (NULL);
 	}
 
-	return (ptr);
+	for (i = 0; i < final_size; i++)
+		str[i] = 0;
 
+	return (str);
 }
