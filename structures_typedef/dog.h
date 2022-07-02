@@ -1,9 +1,10 @@
 #ifndef HEADER_FILE
 #define HEADER_FILE
 
-struct dog{
+struct dog
+{
 	char *name;
-	float *age;
+	float age;
 	char *owner;
 };
 
