@@ -2,11 +2,11 @@
 #include "variadic_functions.h"
 
 /**
- *print_numbers - check the code
- *@separator: variable int
- *@n: variable 
- *Return: Always 0.
- */
+*print_numbers - check the code
+*@n: variable
+*@separator: variable int
+*Return: Always 0.
+*/
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
@@ -20,7 +20,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		result = va_arg(ptr, int);
 		printf("%d", result);
-		
 		if (i != (n - 1) && separator != NULL)
 			printf("%s", separator);
 	}
