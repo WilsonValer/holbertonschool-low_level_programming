@@ -8,16 +8,13 @@ all: $(NAME)
 school: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 clean:
-	$(RM)*~$(NAME)
+	$(RM) *~ $(NAME)
 
 oclean:
-	$(RM) $(OBJ)
+	$(RM) *~ $(OBJ)
 
 fclean:
-	$(RM)*~$(OBJ)
-
-fclean:
-	$(RM)*~$(NAME)
+	$(RM) *~ $(NAME)
 	$(RM) $(OBJ)
 
 re: oclean all
