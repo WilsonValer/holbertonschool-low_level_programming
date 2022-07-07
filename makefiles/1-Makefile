@@ -1,7 +1,0 @@
-# este programa copila mi makefile
-CC = gcc
-SRC = main.c school.c
-all: wilson
-school: $(SRC)
-	$(CC) $(SRC) -o school
-
