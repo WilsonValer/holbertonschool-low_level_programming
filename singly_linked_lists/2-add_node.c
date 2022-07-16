@@ -30,7 +30,6 @@ list_t *create_nodo(const char *ptr)
 
 	if (new == NULL)
 	{
-		printf("Error\n");
 		free(new);
 		return (NULL);
 	}
