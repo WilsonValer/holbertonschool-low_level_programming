@@ -41,7 +41,7 @@ list_t *create_nodo(const char *ptr)
 	return (new);
 }
 /**
- *add_node - check the code
+ *add_node_end- check the code
  *@head: variable head
  *@str: variable
  *Return: Always 0.
@@ -50,6 +50,7 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *last;
 	list_t *new_node;
+
 	last = *head;
 
 	while (last && last->next  != NULL)
