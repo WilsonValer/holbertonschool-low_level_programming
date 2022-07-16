@@ -27,9 +27,24 @@ list_t *create_nodo(const char *ptr)
 	list_t *new;
 
 	new = malloc(sizeof(list_t));
+
+	if (new == NULL)
+	{
+		printf("Error\n");
+		free(new);
+		return (NULL);
+	}
 	new->str = strdup(ptr);
+	if (new->str == NULL)
+	{
+		free(new->str);
+		free(new);
+		return (NULL);
+	}
+
 	new->len = _srtlen(ptr);
 	new->next = NULL;
+
 	return (new);
 }
 /**
