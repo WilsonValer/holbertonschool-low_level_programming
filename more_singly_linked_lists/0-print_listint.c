@@ -10,24 +10,22 @@
  */
 size_t print_listint(const listint_t *h)
 {
-        int i = 0;
+	const listint_t *ptr;
+	size_t count = 0;
 
-        if (h == NULL)
-                return (0);
+	ptr = h;
 
-        while (h != NULL)
-        {
-                if (h->str == NULL)
-                {
-                        printf("[0] (nil)\n");
-                }
-                else
-                {
-                printf("[%u] %s\n", h->len, h->str);
-                }
-                h = h->next;
-                i++;
-        }
+	if (h == NULL)
+		return (0);
 
-        return (i);
+
+	while (ptr != NULL)
+	{
+		printf("%d\n", ptr->n);
+		ptr = ptr->next;
+
+		count++;
+	}
+
+	return (count);
 }
