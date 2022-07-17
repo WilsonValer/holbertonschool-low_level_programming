@@ -6,16 +6,20 @@
 /**
  *free_list - check the code
  *@head: variable
- * Return: Always 0.
+ *Return: Always 0.
  */
 void free_list(list_t *head)
 {
-	list_t *delete;
+	list_t *current;
+	list_t *nxt;
 
-	while (head != NULL)
+	current = head;
+
+	while (current != NULL)
 	{
-		delete = head;
-		head = head->next;
-		free(delete);
+		nxt = current->next;
+		free(current->str);
+		free(current);
+		current = nxt;
 	}
 }
