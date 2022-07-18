@@ -5,6 +5,7 @@
 
 /**
  *get_nodeint_at_index - check the code
+ *@index: variable
  *@head: variable
  *Return: Always 0.
  */
