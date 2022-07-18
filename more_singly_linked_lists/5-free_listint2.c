@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- *free_listint - check the code
+ *free_listint2 - check the code
  *@head: variable
  *Return: Always 0.
  */
@@ -18,7 +18,7 @@ void free_listint2(listint_t **head)
 	while (*head != NULL)
 	{
 		tmp = *head;
-		*head =(*head)->next;
+		*head = (*head)->next;
 		free(tmp);
 	}
 }
