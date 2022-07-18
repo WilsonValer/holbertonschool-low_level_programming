@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- *free_listint2 - check the code
+ *pop_listint - check the code
  *@head: variable
  *Return: Always 0.
  */
