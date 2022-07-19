@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 #include "main.h"
-
+#include <limits.h>
 /**
  *print_binary - check the code
  *@n: variable
