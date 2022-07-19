@@ -12,7 +12,7 @@ void print_binary(unsigned long int n)
 {
 	long int i;
 	int flag;
-	unsigned long int mask = sizeof(int) * 8 - 1;
+	unsigned long int mask = sizeof(long int) * 8 - 1;
 
 	if (n == 0)
 		_putchar('0');
