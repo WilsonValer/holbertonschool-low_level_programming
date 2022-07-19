@@ -5,6 +5,7 @@
 #include <limits.h>
 /**
  *get_bit - check the code
+ *@index: variable
  *@n: variable
  *Return: Always 0.
  */
