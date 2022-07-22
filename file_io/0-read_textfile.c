@@ -1,24 +1,37 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
-
 /**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(int ac, char **av)
+  * read_textfile - reads a text file and prints it to the POSIX standard out
+  * @filename: name of the file to read
+  * @letters: number of characters to print
+  * Return: 0 on success
+  **/
+ssize_t read_textfile(const char *filename, size_t letters)
 {
-    ssize_t n;
+	char *buffer = NULL;
+	int fd = 0;
+	ssize_t characters;
 
-    if (ac != 2)
-    {
-        dprintf(2, "Usage: %s filename\n", av[0]);
-        exit(1);
-    }
-    n = read_textfile(av[1], 114);
-    printf("\n(printed chars: %li)\n", n);
-    n = read_textfile(av[1], 1024);
-    printf("\n(printed chars: %li)\n", n);
-    return (0);
+	fd = open(filename, O_RDONLY);
+	if (fd == -1)
+	{
+		return (0);
+	}
+
+	buffer = malloc(sizeof(char) * letters);
+	if (buffer == NULL)
+	{
+		free(buffer);
+		return (0);
+	}
+	characters = read(fd, buffer, letters);
+	if (characters == -1)
+	{
+		return (0);
+	}
+	else
+	{
+		write(STDOUT_FILENO, buffer, characters);
+		return (characters);
+	}
+	close(fd);
 }
