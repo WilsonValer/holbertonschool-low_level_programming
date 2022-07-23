@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 /**
-  *create_file - reads a text file and prints it to the POSIX standard out
+  *append_text_to_file - ret to the POSIX standard out
   *@filename: name of the file to read
   *@text_content: number of characters to print
   *Return: 0 on success
