@@ -17,6 +17,10 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	listint_t *temp = *head;
 
 	new_node = create_nodo(n);
+	if (new_node == NULL)
+	{
+		return (NULL);
+	}
 	if (idx == 0)
 	{
 		new_node->next = *head;
