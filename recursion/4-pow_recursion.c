@@ -1,27 +1,27 @@
 #include "main.h"
 #include <stdio.h>
 /**
- *_pow_recursion  - check the code
- *@y: variable
- *@x: variable
- * Return: potencia
+ * _pow_recursion -function that x raised to the power of y.
+ * @x: base.
+ * @y: power.
+ * Return: _pow_recursion.
  */
 int _pow_recursion(int x, int y)
 {
-	int res;
-
-	if (y == 0)
+	if (y >= 0)
 	{
-		res = 1;
+		if (y == 0)
+		{
+			return (1);
+		}
+		else
+		{
+			y--;
+			return (x * _pow_recursion(x, y));
+		}
 	}
-	else if (y > 1)
-	{
-		res = x * _pow_recursion(x, y - 1);
-	}
-
 	else
 	{
-		res = 1 / x * _pow_recursion(x, y + 1);
+		return (-1);
 	}
-	return (res);
 }
