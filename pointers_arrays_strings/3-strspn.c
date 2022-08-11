@@ -2,17 +2,25 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * _strspn - gets lengthof a prefix substring
+ * @s: string to check
+ * @accept: string to check against
  *
- * Return: Always 0.
+ * Return: number of bytes of s in accept
  */
-int main(void)
+unsigned int _strspn(char *s, char *accept)
 {
-    char *s = "hello, world";
-    char *f = "oleh";
-    unsigned int n;
+	unsigned int i, j;
 
-    n = _strspn(s, f);
-    printf("%u\n", n);
-    return (0);
+	for (i = 0; s[i]; i++)
+	{
+		for (j = 0; accept[j]; j++)
+		{
+			if (s[i] == accept[j])
+				break;
+		}
+		if (!accept[j])
+			break;
+	}
+	return (i);
 }
