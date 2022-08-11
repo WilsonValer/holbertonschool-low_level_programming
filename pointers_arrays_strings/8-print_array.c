@@ -2,8 +2,6 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "holberton.h"
-#include <stdio.h>
 /**
  * print_array - prints n elements of and array of integers.
  * @a: array of integers
