@@ -1,8 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- *-sqrt_recursion  - check the code
- *isqrt_rec - function raiz
+ *isqrt_rec - check the code
  *@n: variable
  *@k: variable
  * Return: raiz
@@ -23,6 +22,11 @@ int isqrt_rec(long int k, int n)
 	else
 		return (isqrt_rec(next_k, n));
 }
+/**
+ *_sqrt_recursion - check the code
+ *@n: variable
+ * Return: raiz
+ */
 int _sqrt_recursion(int n)
 {
 	return (isqrt_rec(1, n));
