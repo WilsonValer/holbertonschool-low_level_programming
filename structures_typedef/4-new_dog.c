@@ -1,38 +1,52 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "dog.h"
-
+#include <stdlib.h>
+#include <stdio.h>
 /**
- **new_dog - Prints a struct dog
- * @name: pointer to struct dog
- * @age: variable
- * @owner: variable
- */
-
+ * new_dog - function that creates a new dog.
+ * @name: name of the new dog.
+ * @age: age of the new dog.
+ * @owner: new owner of the dog.
+ * Return: pointer to point a new struct dog.
+*/
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *new_dog;
+	dog_t *ndog;
+	int nlen, olen;
 
-	new_dog = malloc (sizeof (new_dog));
-	if (!new_dog)
+	ndog = malloc(sizeof(dog_t));
+	if (ndog == NULL)
 		return (NULL);
+	if (name == NULL)
+		return (NULL);
+	for (nlen = 0; name[nlen] != '\0'; nlen++)
+		;
+	if (owner == NULL)
+		return (NULL);
+	for (olen = 0; owner[olen] != '\0'; olen++)
+		;
 
-	(*new_dog).name = malloc((strlen(name) + 1) * sizeof(char));
-	if (!*new_dog.name)
-	{	free(*new_dog.name)
-			return (NULL);
-	}
-
-	(*new_dog).name = malloc((strlen(owner) + 1) * sizeof(char));
-	if (!*new_dog.owner)
+	nlen++, olen++;
+	ndog->name = malloc(sizeof(char) * nlen);
+	if (ndog->name == NULL)
 	{
-		free(*new_dog.owner)
-			return (NULL);
+		free(ndog);
+		return (NULL);
 	}
 
-	strcpy((*nw_dog.name, name);
-	strcpy((*new_dog.owner, owner);
-	(*new_dog.age = age;		
+	for (nlen = 0; name[nlen] != '\0'; nlen++)
+		ndog->name[nlen] = name[nlen];
+	ndog->name[nlen] = '\0';
 
-
+	ndog->owner = malloc(sizeof(char) * olen);
+	if (ndog->owner == NULL)
+	{
+		free(ndog->name);
+		free(ndog);
+		return (NULL);
+	}
+	for (olen = 0; owner[olen] != '\0'; olen++)
+		ndog->owner[olen] = owner[olen];
+	ndog->owner[olen] = '\0';
+	ndog->age = age;
+	return (ndog);
 }
