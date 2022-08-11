@@ -2,42 +2,52 @@
 #include <string.h>
 #include <stdio.h>
 #include "lists.h"
-
 /**
- * add_dnodeint_end - add node to end of doubly linked list
- * @head: pointer to head of list
- * @n: node data
- * Return: address of new node, or Null if failed
+ *create_nodo - check the code
+ *@s: variable
+ *Return: Always 0.
+ */
+dlistint_t *create_nodo(const int s)
+{
+	dlistint_t *new = NULL;
+
+	new = malloc(sizeof(dlistint_t));
+	if (new == NULL)
+	{
+		free(new);
+		return (NULL);
+	}
+
+	new->n = s;
+	new->next = NULL;
+	new->prev = NULL;
+
+	return (new);
+}
+/**
+ *add_dnodeint_end - check the code
+ *@head: variable head
+ *@n: variable
+ *Return: Always 0.
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
-	dlistint_t *new, *last;
+	dlistint_t *last_node = NULL;
+	dlistint_t *new_node = NULL;
 
-	if (!head)
-		return (NULL);
-
-	/* malloc and set new node data */
-	new = malloc(sizeof(struct dlistint_s));
-	if (!new)
-		return (NULL);
-	new->n = n;
-
-	/* account for empty linked list */
-	if (*head == NULL)
+	last_node = *head;
+	new_node = create_nodo(n);
+	if (last_node)
 	{
-		*head = new;
-		new->next = NULL;
-		new->prev = NULL;
-		return (new);
+		while (last_node && last_node->next != NULL)
+		{
+			last_node = last_node->next;
+		}
+
+		last_node->next = new_node;
+		new_node->prev = last_node;
 	}
-
-	/* traverse to last node and insert */
-	last = *head;
-	while (last->next != NULL)
-		last = last->next;
-	new->next = NULL;
-	new->prev = last;
-	last->next = new;
-
-	return (new);
+	else
+		*head = new_node;
+	return (new_node);
 }
