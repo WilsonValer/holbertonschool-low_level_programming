@@ -3,28 +3,6 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- *create_nodo - check the code
- *@s: variable
- *Return: Always 0.
- */
-dlistint_t *create_nodo(const int s)
-{
-	dlistint_t *new;
-
-	new = malloc(sizeof(dlistint_t));
-
-	if (new == NULL)
-	{
-		free(new);
-		return (NULL);
-	}
-	new->n = s;
-	new->next = NULL;
-	new->prev = NULL;
-
-	return (new);
-}
-/**
  *add_dnodeint- check the code
  *@head: variable head
  *@n: variable
