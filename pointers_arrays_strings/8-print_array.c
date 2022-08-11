@@ -1,22 +1,24 @@
 #include "main.h"
 #include <stdio.h>
 #include <string.h>
+
+#include "holberton.h"
+#include <stdio.h>
 /**
- *print_array - prints a string, in reverse, followed by a new line
- *@a: variable received a pointer
- *@n: varibale
- * Return: return void
- */
+ * print_array - prints n elements of and array of integers.
+ * @a: array of integers
+ * @n: numbers of elements to print
+*/
 void print_array(int *a, int n)
 {
-
 	int i;
 
-	for (i = 0; i < n - 1; i++)
+	for (i = 0; i < n; i++)
 	{
+		printf("%d", a[i]);
 
-		printf("%d, ", *(a + i));
+		if (i != (n - 1))
+			printf(", ");
 	}
-		printf("%d", *(a + i));
-		putchar(10);
+	printf("\n");
 }
