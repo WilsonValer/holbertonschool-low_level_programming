@@ -8,7 +8,7 @@
  */
 int main(int argc, char *argv[] __attribute__((unused)))
 {
-			argc--;
-			printf("%d\n", argc);
+	argc--;
+	printf("%d\n", argc);
 	return (0);
 }
