@@ -3,9 +3,9 @@
 #include <stdlib.h>
 /**
  *main - funtion main
- *@argc: number received
+ *@argc: number arguument  received for exterior
  *@argv: second number received
- * Return: return 0;
+ *Return: return 0;
  */
 int main(int argc, char *argv[])
 {
@@ -26,7 +26,6 @@ int main(int argc, char *argv[])
 				}
 			}
 		}
-
 			printf("%d\n", sum);
 	return (0);
 }
