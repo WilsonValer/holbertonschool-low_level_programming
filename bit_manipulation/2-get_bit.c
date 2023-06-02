@@ -11,10 +11,10 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned long int store;
+	unsigned long int stor;
 
 	if (index > 64)
 		return (-1);
 	store = (n >> index) & 1;
-	return (store);
+	return (stor);
 }
